@@ -1,0 +1,89 @@
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "figree";
+}
+
+@font-face {
+  font-family: figree;
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+/* **************** */
+
+.container {
+  min-height: 100vh;
+  background-color: #f4d04e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card .card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card button {
+  background-color: #f4d04e;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  padding: 10px 10px;
+  margin: 10px 0;
+  font-weight: 900;
+}
+.card label {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.card h1 {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 10px 0;
+}
+.card h1:hover {
+  color: #f4d04e;
+  cursor: pointer;
+}
+.card p {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin: 10px 0;
+}
+.avatar-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar-box label {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.avatar-box img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* responsive design */
+@media (max-width: 600px) {
+  .card {
+  }
+}
